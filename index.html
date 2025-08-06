@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뮤직뱅크 - AI 작사가</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>뮤직뱅크 <span class="subtitle">AI 작사가</span></h1>
+        </header>
+        <section class="api-key-section">
+            <label for="api-key">Gemini API 키:</label>
+            <input type="password" id="api-key" placeholder="API 키 입력" />
+            <button id="save-api-key">저장</button>
+            <span id="api-key-status"></span>
+        </section>
+        <section class="input-section">
+            <label for="topic">가사 주제/내용 입력:</label>
+            <textarea id="topic" rows="3" placeholder="예: 사랑, 여름, 우정 등"></textarea>
+            <button id="generate-lyrics">가사 생성</button>
+        </section>
+        <section class="output-section">
+            <h2>생성된 가사 & 스타일 <button id="copy-output">복사</button></h2>
+            <pre id="lyrics-output"></pre>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
